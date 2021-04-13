@@ -1,0 +1,43 @@
+POST http://localhost:8080/login
+Content-Type: application/json
+
+{
+    "username": "user1",
+    "password": "password1"
+}
+###
+
+GET http://localhost:8080/users?id=t7KCmZ1ofD0KeZCB
+Authorization: t17gjyu2qx
+
+###
+GET http://localhost:8080/users?name=jin
+Authorization: d5hezzbmyl6
+
+###
+PUT http://localhost:8080/users
+Authorization: fi1vtr3g2bo
+Content-Type: application/json
+
+{
+    "age": 45,
+    "email": "some@othermail.com",
+    "name": "jinjay",
+    "workingPosition": 3
+}
+
+###
+
+DELETE http://localhost:8080/users?id=1
+Authorization: 0dv845ub9u
+
+###
+
+POST http://localhost:8080/prucie
+Content-Type: application/json
+
+{
+    "name": "hejz z ostrowi",
+    "type": "hybrid",
+    "thcLevel": "29%"
+}
